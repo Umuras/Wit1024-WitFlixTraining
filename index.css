@@ -18,6 +18,8 @@ header h1 {
 header nav {
   display: flex;
   gap: 0.5rem;
+  text-align: center;
+  position: calc(1888 / 2);
 }
 
 header nav a {
@@ -28,6 +30,12 @@ header nav a {
 header div.user-profile {
   display: flex;
   gap: 0.75rem;
+  position: relative;
+}
+
+div.user-profile i.fa-magnifying-glass {
+  position: absolute;
+  right: 5.2rem;
 }
 
 div.user-profile img {
@@ -37,9 +45,11 @@ div.user-profile img {
 
 main.hero {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid black;
+  min-height: 80vh;
+  padding-right: 15rem;
 }
 
 div.movieinfo-container h2 {
@@ -51,7 +61,9 @@ div.movieinfo-container h2 {
 }
 
 div.movieinfo-container {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
+  border: solid;
+  width: 50vw;
 }
 
 div.moviedetails-container span {
@@ -71,6 +83,7 @@ span.pg {
   border: 1px solid black;
   border-radius: 0.3rem;
   padding: 0.1rem;
+  margin: 0 0.5rem;
 }
 
 span.movietime {
@@ -83,4 +96,5 @@ div.btn button {
   color: white;
   border-radius: 0.5rem;
   border: none;
+  margin: 0 0.5rem 0.5rem 0;
 }
