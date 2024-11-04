@@ -1,0 +1,86 @@
+body {
+  margin: 1rem 1rem;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  color: red;
+}
+
+header nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: gray;
+}
+
+header div.user-profile {
+  display: flex;
+  gap: 0.75rem;
+}
+
+div.user-profile img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+main.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+div.movieinfo-container h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+div.movieinfo-container {
+  margin-left: 1.5rem;
+}
+
+div.moviedetails-container span {
+  color: red;
+  font-weight: bold;
+}
+
+span.stars {
+  color: red;
+}
+
+span.rateValue {
+  font-weight: bold;
+}
+
+span.pg {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.1rem;
+}
+
+span.movietime {
+  font-weight: bold;
+}
+
+div.btn button {
+  padding: 0.75rem 2.5rem;
+  background-color: red;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+}
