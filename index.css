@@ -8,6 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1;
 }
 
 header h1 {
@@ -19,7 +20,6 @@ header nav {
   display: flex;
   gap: 0.5rem;
   text-align: center;
-  position: calc(1888 / 2);
 }
 
 header nav a {
@@ -35,12 +35,11 @@ header div.user-profile {
 
 div.user-profile i.fa-magnifying-glass {
   position: absolute;
-  right: 5.2rem;
+  right: 5.6rem;
 }
 
 div.user-profile img {
   border-radius: 1rem;
-  width: 100%;
 }
 
 main.hero {
@@ -64,6 +63,7 @@ div.movieinfo-container {
   margin-left: 1rem;
   border: solid;
   width: 50vw;
+  padding-bottom: 1rem;
 }
 
 div.moviedetails-container span {
@@ -90,11 +90,81 @@ span.movietime {
   font-weight: bold;
 }
 
-div.btn button {
+div.btnHero .playButton {
   padding: 0.75rem 2.5rem;
   background-color: red;
   color: white;
   border-radius: 0.5rem;
   border: none;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0 0.5rem 1rem 0;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+div.btnHero {
+  margin: 2rem 1rem 1rem 0rem;
+}
+
+div.btnHero .fa-solid,
+.fa.play {
+  margin-left: -11.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.suggestion .titles-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titles-container a {
+  text-decoration: none;
+  color: red;
+}
+
+div.popmovie1 {
+  border: 1px solid black;
+  width: 30vw;
+  height: 26vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion h2 {
+  margin-top: 3.2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.suggestion .pg,
+.movietime {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.suggestion .fa-solid,
+.fa.play {
+  margin-left: -6.6rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.suggestion .btn {
+  padding: 0.7rem 0.7rem;
+  margin-top: 1.25rem;
+  margin-left: 0.9rem;
+  background-color: red;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  width: 8rem;
+}
+
+.suggestion .playButton {
+  margin-left: 1.8rem;
+  font-style: normal;
+  font-size: 1.1rem;
 }
