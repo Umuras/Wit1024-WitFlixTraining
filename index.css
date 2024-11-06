@@ -123,12 +123,21 @@ div.btnHero .fa-solid,
   color: red;
 }
 
-div.popmovie1 {
+.moviesCard-Container {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+div.popmovie {
   border: 1px solid black;
   width: 30vw;
   height: 26vh;
   display: flex;
   flex-direction: column;
+  min-width: 400px;
+  min-height: 250px;
+  margin-bottom: 2.5rem;
 }
 
 .suggestion h2 {
@@ -167,4 +176,40 @@ div.popmovie1 {
   margin-left: 1.8rem;
   font-style: normal;
   font-size: 1.1rem;
+}
+
+.lastinfos-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5rem;
+  align-items: first baseline;
+}
+
+.lastinfos-container img {
+  width: 9rem;
+  height: 3rem;
+}
+
+.navigation-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.navigation-container a {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+.socialicons-container {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.apps-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.appsimages-container {
+  display: flex;
 }
