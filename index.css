@@ -8,12 +8,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
+  flex-wrap: wrap;
 }
 
 header h1 {
   margin: 0;
   color: red;
+  flex: 1;
 }
 
 header nav {
@@ -30,12 +31,23 @@ header nav a {
 header div.user-profile {
   display: flex;
   gap: 0.75rem;
-  position: relative;
+  flex: 1;
+  justify-content: flex-end;
 }
 
-div.user-profile i.fa-magnifying-glass {
-  position: absolute;
-  right: 5.6rem;
+header .searchbar {
+  background-image: url("/images/search-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 8.9rem;
+}
+
+header .hamburger {
+  display: none;
+}
+
+div.user-profile .search-icon {
+  width: 1.5rem;
 }
 
 div.user-profile img {
@@ -127,6 +139,8 @@ div.btnHero .fa-solid,
   display: flex;
   gap: 4rem;
   justify-content: space-between;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 div.popmovie {
@@ -182,7 +196,7 @@ div.popmovie {
   display: flex;
   justify-content: space-between;
   column-gap: 5rem;
-  align-items: first baseline;
+  align-items: flex-start;
 }
 
 .lastinfos-container img {
@@ -205,6 +219,11 @@ div.popmovie {
   column-gap: 0.5rem;
 }
 
+.socialmedias-container p,
+.apps-container p {
+  margin-top: 0;
+}
+
 .apps-container {
   display: flex;
   flex-direction: column;
@@ -212,4 +231,37 @@ div.popmovie {
 
 .appsimages-container {
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .lastinfos-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav {
+    order: 1;
+  }
+
+  .navigation-container a {
+    flex-grow: 1;
+  }
+
+  div.movieinfo-container {
+    width: 100%;
+    margin-right: 1rem;
+  }
+
+  main.hero {
+    padding: 0;
+  }
+
+  header div.user-profile {
+    display: none;
+  }
+
+  header .hamburger {
+    display: block;
+  }
 }
