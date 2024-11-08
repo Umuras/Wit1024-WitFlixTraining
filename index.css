@@ -2,6 +2,7 @@ body {
   margin: 1rem 1rem;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 
 header {
@@ -9,6 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
 
 header h1 {
@@ -44,10 +46,7 @@ header .searchbar {
 
 header .hamburger {
   display: none;
-}
-
-div.user-profile .search-icon {
-  width: 1.5rem;
+  color: white;
 }
 
 div.user-profile img {
@@ -58,9 +57,13 @@ main.hero {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid white;
   min-height: 80vh;
   padding-right: 15rem;
+  color: white;
+  background-image: url(/images/sonic.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 div.movieinfo-container h2 {
@@ -73,7 +76,6 @@ div.movieinfo-container h2 {
 
 div.movieinfo-container {
   margin-left: 1rem;
-  border: solid;
   width: 50vw;
   padding-bottom: 1rem;
 }
@@ -92,7 +94,7 @@ span.rateValue {
 }
 
 span.pg {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 0.3rem;
   padding: 0.1rem;
   margin: 0 0.5rem;
@@ -128,6 +130,7 @@ div.btnHero .fa-solid,
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .titles-container a {
@@ -141,17 +144,102 @@ div.btnHero .fa-solid,
   justify-content: space-between;
   overflow: auto;
   white-space: nowrap;
+  margin-bottom: 2.5rem;
 }
 
-div.popmovie {
-  border: 1px solid black;
+div.moviecard {
+  border: 1px solid white;
   width: 30vw;
   height: 26vh;
   display: flex;
   flex-direction: column;
   min-width: 400px;
   min-height: 250px;
-  margin-bottom: 2.5rem;
+  color: white;
+}
+
+.mvc1 {
+  background-image: url("/images/back-to-the-future-movie.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc2 {
+  background-image: url("/images/arnoldrawdeal.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc3 {
+  background-image: url("/images/avengers-infinity-war-movie.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc4 {
+  background-image: url("/images/avengers-movie.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc5 {
+  background-image: url("/images/chucknorris.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc6 {
+  background-image: url("/images/iceage.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc7 {
+  background-image: url("/images/mr.peabodyandsherman.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc8 {
+  background-image: url("/images/paw-patrol.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc9 {
+  background-image: url("/images/pirates-of-the-caribbean.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc10 {
+  background-image: url("/images/pulp-fiction.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc11 {
+  background-image: url("/images/sonicthehedgehog.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc12 {
+  background-image: url("/images/spiderman.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc13 {
+  background-image: url("/images/thor-the-dark-world.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+}
+
+.mvc14 {
+  background-image: url("/images/tom-and-jerry.gif");
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
 }
 
 .suggestion h2 {
@@ -160,6 +248,7 @@ div.popmovie {
   margin-bottom: 1rem;
   text-transform: uppercase;
   font-size: 2rem;
+  color: white;
 }
 
 .suggestion .pg,
@@ -197,6 +286,7 @@ div.popmovie {
   justify-content: space-between;
   column-gap: 5rem;
   align-items: flex-start;
+  color: white;
 }
 
 .lastinfos-container img {
@@ -233,15 +323,11 @@ div.popmovie {
   display: flex;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 639px) {
   .lastinfos-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  header nav {
-    order: 1;
   }
 
   .navigation-container a {
@@ -259,6 +345,12 @@ div.popmovie {
 
   header div.user-profile {
     display: none;
+  }
+
+  header nav {
+    order: 1;
+    justify-content: center;
+    width: 100%;
   }
 
   header .hamburger {
