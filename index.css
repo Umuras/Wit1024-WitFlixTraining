@@ -102,6 +102,7 @@ span.pg {
 
 span.movietime {
   font-weight: bold;
+  margin-left: 0rem;
 }
 
 div.btnHero .playButton {
@@ -156,6 +157,7 @@ div.moviecard {
   min-width: 400px;
   min-height: 250px;
   color: white;
+  margin-bottom: 1rem;
 }
 
 .mvc1 {
@@ -355,5 +357,17 @@ div.moviecard {
 
   header .hamburger {
     display: block;
+  }
+
+  div.moviecard {
+    min-width: 200px;
+  }
+
+  div.moviecard h2 {
+    font-size: 1.5rem;
+  }
+
+  .bg-md {
+    background-size: 200px 250px;
   }
 }
